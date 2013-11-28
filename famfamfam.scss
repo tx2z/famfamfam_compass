@@ -1,0 +1,9 @@
+@import "compass/utilities/sprites/base";
+@import "flag/*.png";
+$flags: sprite-map("flag/*.png");
+
+.flag {
+    display: inline-block;
+    @include sprite-dimensions($flags, fr);
+}
+@include all-flag-sprites;
